@@ -23,13 +23,6 @@ body {
   @apply bg-[var(--background)] text-[var(--foreground)];
 }
 
-.container,
-.section,
-.card,
-.box {
-  @apply bg-[var(--container-bg)] text-[var(--container-text)] p-4 rounded-lg shadow-md;
-}
-
 button {
   @apply bg-[var(--button-bg)] text-[var(--button-text)] px-4 py-2 rounded-md font-semibold transition-all duration-300;
 }
@@ -43,11 +36,4 @@ button:hover {
     font-size: 12px;
     line-height: 18px;
   }
-}
-
-.dark {
-  --background: #1f2937;
-  --foreground: #ffffff;
-  --container-bg: #374151; /* dark gray */
-  --container-text: #ffffff;
 }

@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-import HomePage from "@/pages/home/HomePage";
-
+import InfoPage from "@/pages/info/InfoPage";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
@@ -30,9 +29,8 @@ const MainLayout = () => {
         </div>
 
         {/* Page Content */}
-        <div className="p-6">
-          <HomePage />
-        </div>
+        <InfoPage></InfoPage>
+        <div className="p-6">{/* <HomePage /> */}</div>
       </div>
     </div>
   );
