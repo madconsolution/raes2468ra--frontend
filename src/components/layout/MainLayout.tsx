@@ -18,10 +18,10 @@ const MainLayout = () => {
       {/* Main Content */}
       <div className="flex flex-1 flex-col">
         {/* Mobile Menu Button */}
-        <div className="md:hidden p-4 bg-gray-100 text-white flex items-center justify-between">
+        <div className="md:hidden p-4  text-gray-700 flex items-center justify-between">
           <Button
             variant="ghost"
-            className="text-white"
+            className="text-gray-700"
             onClick={toggleSidebar}
           >
             <Menu className="w-23 h-16" />
