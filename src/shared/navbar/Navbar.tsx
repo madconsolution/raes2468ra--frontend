@@ -1,21 +1,16 @@
-import {
-  FiHome,
-  FiMessageSquare,
-  FiSave,
-  FiSettings,
-  FiUser,
-} from "react-icons/fi";
+import { FiHome, FiMessageSquare, FiSettings, FiUser } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navItems = [
     { id: "home", path: "/", icon: <FiHome size={24} />, label: "Home" },
-    {
-      id: "saved",
-      path: "/saved",
-      icon: <FiSave size={24} />,
-      label: "Saved",
-    },
+    { id: "home", path: "/home", icon: <FiHome size={24} />, label: "Home" },
+    // {
+    //   id: "saved",
+    //   path: "/saved",
+    //   icon: <FiSave size={24} />,
+    //   label: "Saved",
+    // },
     {
       id: "chat",
       path: "/chat",
@@ -24,7 +19,7 @@ const Navbar = () => {
     },
     {
       id: "order",
-      path: "/order",
+      path: "/detail",
       icon: <FiUser size={24} />,
       label: "Order",
     },
