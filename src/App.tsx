@@ -1,7 +1,11 @@
 import MainLayout from "./components/layout/MainLayout";
 
 function App() {
-  return <MainLayout></MainLayout>;
+  return (
+    <div className="mx-auto w-9/12">
+      <MainLayout></MainLayout>
+    </div>
+  );
 }
 
 export default App;
