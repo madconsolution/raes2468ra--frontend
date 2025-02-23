@@ -14,12 +14,11 @@ const Sidebar = ({
   return (
     <div
       className={cn(
-        "fixed inset-y-0 left-0 z-50 w-64 bg-gray-100  p-4  text-gray-700 md:relative md:w-64 md:block",
+        "fixed inset-y-0 left-0 z-50 w-full   md:relative md:w-[25%] md:block",
         isOpen ? "block" : "hidden md:block"
       )}
     >
       <div className="flex  justify-between items-center">
-        <h2 className="text-xl font-bold">Menus</h2>
         <Button
           variant="ghost"
           className="md:hidden text-gray-700 "

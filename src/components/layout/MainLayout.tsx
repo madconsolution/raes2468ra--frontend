@@ -11,12 +11,14 @@ const MainLayout = () => {
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
 
   return (
-    <div className="flex h-screen overflow-hidden">
-      {/* Sidebar */}
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+    <div className=" mx-auto  md:grid-cols-[30%_60%]  bg-gray-200">
+      <>
+        {/* Sidebar */}
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      </>
 
       {/* Main Content */}
-      <div className="flex flex-1 flex-col">
+      <>
         {/* Mobile Menu Button */}
         <div className="md:hidden p-4  text-gray-700 flex items-center justify-between">
           <Button
@@ -29,9 +31,10 @@ const MainLayout = () => {
         </div>
 
         {/* Page Content */}
-        <InfoPage></InfoPage>
-        <div className="p-6">{/* <HomePage /> */}</div>
-      </div>
+        <div className="w-9/12 mx-auto">
+          <InfoPage></InfoPage>
+        </div>
+      </>
     </div>
   );
 };
