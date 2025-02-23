@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
-import { Home, X } from "lucide-react";
+import { X } from "lucide-react";
+
+import InfoMobileMenu from "../info/InfoMobileMenu";
 import { Button } from "../ui/button";
 
 const Sidebar = ({
@@ -17,7 +19,7 @@ const Sidebar = ({
       )}
     >
       <div className="flex  justify-between items-center">
-        <h2 className="text-xl font-bold">Menu</h2>
+        <h2 className="text-xl font-bold">Menus</h2>
         <Button
           variant="ghost"
           className="md:hidden text-gray-700 "
@@ -26,12 +28,7 @@ const Sidebar = ({
           <X className="w-23 h-16" />
         </Button>
       </div>
-      <ul className="mt-4 space-y-2">
-        <li className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-md">
-          <Home className="w-5 h-5" />
-          <span>Home</span>
-        </li>
-      </ul>
+      <InfoMobileMenu></InfoMobileMenu>
     </div>
   );
 };
