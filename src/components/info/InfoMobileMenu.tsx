@@ -43,9 +43,9 @@ const menuSections = [
 
 const InfoMobileMenu = () => {
   return (
-    <div className="relative">
+    <div className="w-9/12 md:w-full md:relative">
       {
-        <div className="absolute top-full left-0 w-full bg-white shadow-md rounded-lg p-4">
+        <div className="md:absolute   h-[100vh] bg-[#ffffff] shadow-md rounded-lg p-4">
           {menuSections.map((section) => (
             <div key={section.title} className="mb-4">
               <h3 className="text-gray-500 text-sm font-semibold mb-2 text-center">
@@ -55,12 +55,10 @@ const InfoMobileMenu = () => {
                 {section.items.map(({ name, icon: Icon }) => (
                   <div
                     key={name}
-                    className="flex flex-col items-center justify-center p-3 rounded-lg shadow-md bg-white hover:bg-gray-100 cursor-pointer"
+                    className="flex flex-col items-center justify-center p-3 rounded-2xl shadow-xl bg-[#ffffff] hover:bg-gray-100 cursor-pointer"
                   >
-                    <Icon className="text-purple-500 text-2xl" />
-                    <span className="text-xs text-gray-700 mt-1 text-center">
-                      {name}
-                    </span>
+                    <Icon className="menu_icon" />
+                    <span className="menu_icon_text">{name}</span>
                   </div>
                 ))}
               </div>
