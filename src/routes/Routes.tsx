@@ -1,19 +1,20 @@
-import ChatPage from "@/pages/Chat/ChatPage";
+import DetailPage from "@/pages/details/DetailPage";
 import HomePage from "@/pages/home/HomePage";
-import OrderPage from "@/pages/order/OrderPage";
+import InfoPage from "@/pages/info/InfoPage";
 
-import SavedPage from "@/pages/saved/SavedPage";
-import SettingPage from "@/pages/setting/SettingPage";
 import { Route, Routes as RouterRoutes } from "react-router-dom";
 
 const Routes = () => {
   return (
     <RouterRoutes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/saved" element={<SavedPage />} />
+      <Route path="/" element={<InfoPage />} />
+      <Route path="/home" element={<HomePage />} />
+      <Route path="/detail" element={<DetailPage />} />
+
+      {/* <Route path="/saved" element={<SavedPage />} />
       <Route path="/chat" element={<ChatPage />} />
       <Route path="/order" element={<OrderPage />} />
-      <Route path="/setting" element={<SettingPage />} />
+      <Route path="/setting" element={<SettingPage />} /> */}
     </RouterRoutes>
   );
 };

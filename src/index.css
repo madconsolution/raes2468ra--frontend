@@ -87,3 +87,13 @@ p {
   letter-spacing: 0px;
   color: #666666;
 }
+
+/* Styles for search filed */
+
+.search_field {
+  width: 386;
+  height: 48;
+  border-radius: 12px;
+  background-color: #b7b7b7;
+  color: #ffffff;
+}
