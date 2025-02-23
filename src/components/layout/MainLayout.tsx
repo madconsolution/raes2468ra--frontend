@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-import InfoPage from "@/pages/info/InfoPage";
+import Routes from "@/routes/Routes";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
@@ -32,7 +32,7 @@ const MainLayout = () => {
 
         {/* Page Content */}
         <div className="lg:ml-[40%]">
-          <InfoPage></InfoPage>
+          <Routes />
         </div>
       </div>
     </>
