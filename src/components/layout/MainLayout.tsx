@@ -11,14 +11,14 @@ const MainLayout = () => {
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
 
   return (
-    <div className=" mx-auto  md:grid-cols-[30%_60%]  bg-gray-200">
+    <>
       <>
         {/* Sidebar */}
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </>
 
       {/* Main Content */}
-      <>
+      <div>
         {/* Mobile Menu Button */}
         <div className="md:hidden p-4  text-gray-700 flex items-center justify-between">
           <Button
@@ -31,11 +31,11 @@ const MainLayout = () => {
         </div>
 
         {/* Page Content */}
-        <div className="w-9/12 mx-auto">
+        <div className="lg:ml-[40%]">
           <InfoPage></InfoPage>
         </div>
-      </>
-    </div>
+      </div>
+    </>
   );
 };
 
