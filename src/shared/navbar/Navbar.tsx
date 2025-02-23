@@ -1,26 +1,38 @@
-import { FiBookmark, FiCalendar, FiHome, FiUser } from "react-icons/fi";
+import {
+  FiHome,
+  FiMessageSquare,
+  FiSave,
+  FiSettings,
+  FiUser,
+} from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
-const BottomNavbar = () => {
+const Navbar = () => {
   const navItems = [
     { id: "home", path: "/", icon: <FiHome size={24} />, label: "Home" },
     {
-      id: "bookmark",
-      path: "/bookmarks",
-      icon: <FiBookmark size={24} />,
-      label: "Bookmarks",
+      id: "saved",
+      path: "/saved",
+      icon: <FiSave size={24} />,
+      label: "Saved",
     },
     {
-      id: "calendar",
-      path: "/calendar",
-      icon: <FiCalendar size={24} />,
-      label: "Calendar",
+      id: "chat",
+      path: "/chat",
+      icon: <FiMessageSquare size={24} />,
+      label: "Chat",
     },
     {
-      id: "profile",
-      path: "/profile",
+      id: "order",
+      path: "/order",
       icon: <FiUser size={24} />,
-      label: "Profile",
+      label: "Order",
+    },
+    {
+      id: "setting",
+      path: "/setting",
+      icon: <FiSettings size={24} />,
+      label: "Setting",
     },
   ];
 
@@ -43,4 +55,4 @@ const BottomNavbar = () => {
   );
 };
 
-export default BottomNavbar;
+export default Navbar;

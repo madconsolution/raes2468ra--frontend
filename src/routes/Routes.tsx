@@ -1,16 +1,19 @@
-import BookmarkPage from "@/pages/Bookmark/BookmarkPage";
-import CalendarPage from "@/pages/Calendar/CalendarPage";
+import ChatPage from "@/pages/Chat/ChatPage";
 import HomePage from "@/pages/home/HomePage";
-import ProfilePage from "@/pages/profile/ProfilePage";
+import OrderPage from "@/pages/order/OrderPage";
+
+import SavedPage from "@/pages/saved/SavedPage";
+import SettingPage from "@/pages/setting/SettingPage";
 import { Route, Routes as RouterRoutes } from "react-router-dom";
 
 const Routes = () => {
   return (
     <RouterRoutes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/bookmarks" element={<BookmarkPage />} />
-      <Route path="/calendar" element={<CalendarPage />} />
-      <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/saved" element={<SavedPage />} />
+      <Route path="/chat" element={<ChatPage />} />
+      <Route path="/order" element={<OrderPage />} />
+      <Route path="/setting" element={<SettingPage />} />
     </RouterRoutes>
   );
 };
