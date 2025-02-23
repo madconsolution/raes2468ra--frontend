@@ -1,5 +1,6 @@
 import AvatarWithInfo from "@/components/reuseable/avatar/AvatarWithInfo";
 import SearchField from "@/components/reuseable/field/SearchField";
+import SliderCommon from "@/components/reuseable/slider/SliderCommon";
 
 const DetailPage = () => {
   return (
@@ -8,6 +9,7 @@ const DetailPage = () => {
 
       {/* Avatar with info */}
       <AvatarWithInfo></AvatarWithInfo>
+      <SliderCommon></SliderCommon>
     </div>
   );
 };
