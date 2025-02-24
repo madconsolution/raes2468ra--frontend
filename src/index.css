@@ -92,3 +92,17 @@ p {
   background-color: #b7b7b7;
   color: #ffffff;
 }
+
+/* Custom course btn */
+
+.course_btn {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #8677ee;
+  color: #ffffff;
+  border-radius: 24px;
+}
