@@ -12,7 +12,8 @@
   --button-bg: #8677ee;
   --button-text: #ffffff;
 
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
@@ -66,5 +67,6 @@ p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #6e6f8b;
+  /* color: #6e6f8b; */
 }
+

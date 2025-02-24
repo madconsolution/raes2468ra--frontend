@@ -4,6 +4,9 @@ import InfoPage from "@/pages/info/InfoPage";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
+import Profile1 from "@/pages/profile1/Profile1";
+import Profile2 from "@/pages/profile2/Profile2";
+
 
 const MainLayout = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -29,8 +32,11 @@ const MainLayout = () => {
         </div>
 
         {/* Page Content */}
-        <InfoPage></InfoPage>
+        {/* <InfoPage></InfoPage> */}
+        {/* <Profile1></Profile1> */}
+        <Profile2></Profile2>
         <div className="p-6">{/* <HomePage /> */}</div>
+        
       </div>
     </div>
   );
