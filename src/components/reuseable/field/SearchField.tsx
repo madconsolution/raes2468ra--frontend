@@ -9,7 +9,7 @@ const SearchField = () => {
   };
 
   return (
-    <div className="w-full max-w-lg mx-auto">
+    <div className="w-full max-w-lg mx-auto my-2">
       <div className="relative">
         <MdSearch className="absolute text-[#FFFFFF] left-4 top-1/2 transform -translate-y-1/2 " />
         <input

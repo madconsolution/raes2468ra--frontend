@@ -6,9 +6,8 @@ import Navbar from "./shared/navbar/Navbar";
 function App() {
   return (
     <Router>
-      {" "}
       {/* Wrap the entire app inside one Router */}
-      <div className="mx-auto w-9/12">
+      <div className="w-full md:w-9/12 md:mx-auto ">
         <MainLayout />
 
         <Navbar />

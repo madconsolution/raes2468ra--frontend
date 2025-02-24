@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
@@ -19,6 +18,14 @@
   letter-spacing: 1px;
 }
 
+/* Reset global padding, margin & stop horizontal scrolling */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 body {
   @apply bg-[var(--background)] text-[var(--foreground)];
 }
@@ -29,14 +36,6 @@ body {
 .box {
   @apply bg-[var(--container-bg)] text-[var(--container-text)] p-4 rounded-lg shadow-md;
 }
-
-/* button {
-  @apply bg-[var(--button-bg)] text-[var(--button-text)] px-4 py-2 rounded-md font-semibold transition-all duration-300;
-}
-
-button:hover {
-  @apply opacity-80;
-} */
 
 @media (max-width: 768px) {
   body {
@@ -52,57 +51,46 @@ button:hover {
   --container-text: #ffffff;
 }
 
+/* Typography */
 h1 {
-  font-family: Nunito Sans;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0%;
   color: #0a3875;
 }
+
 p {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0%;
   color: #6e6f8b;
 }
 
-.menu_icon {
-  font-family: Poppins;
+/* Menu Icons */
+.menu_icon,
+.menu_icon_text {
+  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: 0px;
+}
+
+.menu_icon {
   text-align: center;
   color: #6767af;
 }
 
 .menu_icon_text {
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0px;
   color: #666666;
 }
 
-/* Styles for search filed */
-
+/* Styles for Search Field */
 .search_field {
-  width: 386;
-  height: 48;
+  width: 386px;
+  height: 48px;
   border-radius: 12px;
   background-color: #b7b7b7;
   color: #ffffff;
 }
-
-/* @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-} */
