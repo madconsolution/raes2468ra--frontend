@@ -88,8 +88,6 @@ p {
 
 /* Styles for Search Field */
 .search_field {
-  width: 386px;
-  height: 48px;
   border-radius: 12px;
   background-color: #b7b7b7;
   color: #ffffff;

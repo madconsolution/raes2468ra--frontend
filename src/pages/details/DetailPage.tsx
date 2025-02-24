@@ -6,7 +6,9 @@ import SliderCommon from "@/components/reuseable/slider/SliderCommon";
 const DetailPage = () => {
   return (
     <div className="py-5">
-      <SearchField></SearchField>
+      <>
+        <SearchField></SearchField>
+      </>
       <SkeletonComponent></SkeletonComponent>
       {/* Avatar with info */}
       <div className="bg-[#ffffff] rounded-t-3xl -mt-10 pt-5">
