@@ -1,4 +1,3 @@
-import ProfilePage from "@/components/profile1/Profile1";
 import ProfilePage2 from "@/components/profile2/Profile2";
 
 const Profile2 = () => {

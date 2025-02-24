@@ -57,13 +57,22 @@ const ProfilePage: React.FC = () => {
 
             <Tabs defaultValue="photos" className="w-full mt-4 ">
               <TabsList className="flex justify-between gap-15 mx-auto">
-                <TabsTrigger value="photos" className="cursor-pointer">
+                <TabsTrigger
+                  value="photos"
+                  className="cursor-pointer data-[state=active]:text-[#f3766b] data-[state=active]:font-semibold"
+                >
                   Photos
                 </TabsTrigger>
-                <TabsTrigger value="videos" className="cursor-pointer">
+                <TabsTrigger
+                  value="videos"
+                  className="cursor-pointer data-[state=active]:text-[#f3766b] data-[state=active]:font-semibold"
+                >
                   Videos
                 </TabsTrigger>
-                <TabsTrigger value="events" className="cursor-pointer">
+                <TabsTrigger
+                  value="events"
+                  className="cursor-pointer data-[state=active]:text-[#f3766b] data-[state=active]:font-semibold"
+                >
                   Events
                 </TabsTrigger>
               </TabsList>
