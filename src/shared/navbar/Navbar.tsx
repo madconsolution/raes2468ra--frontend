@@ -32,7 +32,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed bottom-[5%] left-1/2 -translate-x-1/2 w-[60%] md:w-[40%] lg:w-[30%] bg-white shadow-lg rounded-2xl p-3 flex justify-around items-center">
+    <div className="fixed bottom-[1%] left-1/2  lg:left-[65%]  bg-[#FFFFFF] -translate-x-1/2 w-[100%] md:w-[40%] lg:w-[30%]  rounded-2xl p-3 flex justify-around items-center">
       {navItems.map((item) => (
         <NavLink
           key={item.id}

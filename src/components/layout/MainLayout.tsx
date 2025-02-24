@@ -32,7 +32,9 @@ const MainLayout = () => {
 
         {/* Page Content */}
         <div className="lg:ml-[40%]">
-          <Routes />
+          <>
+            <Routes />
+          </>
         </div>
       </div>
     </>
