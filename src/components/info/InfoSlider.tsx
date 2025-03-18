@@ -60,7 +60,7 @@ const InfoSlider = () => {
                 <img
                   src={slide}
                   alt={`Slide ${index + 1}`}
-                  className="w-[300px] mt-[100px] md:w-9/12 mx-auto rounded-lg"
+                  className="w-[300px] h-auto  md:mt-0 md:w-[460px] md:h-[250px]  mx-auto rounded-lg"
                 />
               </CarouselItem>
             ))}

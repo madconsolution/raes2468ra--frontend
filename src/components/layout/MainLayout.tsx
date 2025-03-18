@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-import InfoPage from "@/pages/info/InfoPage";
+import Routes from "@/routes/Routes";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
@@ -15,12 +15,14 @@ const MainLayout = () => {
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
 
   return (
-    <div className="flex h-screen overflow-hidden">
-      {/* Sidebar */}
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+    <>
+      <>
+        {/* Sidebar */}
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      </>
 
       {/* Main Content */}
-      <div className="flex flex-1 flex-col">
+      <div>
         {/* Mobile Menu Button */}
         <div className="md:hidden p-4  text-gray-700 flex items-center justify-between">
           <Button
@@ -33,14 +35,10 @@ const MainLayout = () => {
         </div>
 
         {/* Page Content */}
-        {/* <InfoPage></InfoPage> */}
-        {/* <Profile1></Profile1> */}
-        {/* <Profile2></Profile2> */}
-        {/* <Profile3></Profile3> */}
-        <Profile4></Profile4>
+        <InfoPage></InfoPage>
         <div className="p-6">{/* <HomePage /> */}</div>
       </div>
-    </div>
+    </>
   );
 };
 
