@@ -2,7 +2,7 @@ import DetailPage from "@/pages/details/DetailPage";
 import HomePage from "@/pages/home/HomePage";
 import InfoPage from "@/pages/info/InfoPage";
 import WorkersSearchPage from "@/pages/search/WorkersSearchPage";
-import TermsAndConditions from "@/pages/terms/TermsAndConditonsPage";
+import TermsAndConditionsPage from "@/pages/terms/TermsAndConditonsPage";
 
 import { Route, Routes as RouterRoutes } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const Routes = () => {
         <Route path="/home" element={<HomePage />} />
         <Route path="/details" element={<DetailPage />} />
         <Route path="/workers-search" element={<WorkersSearchPage />} />
-        <Route path="/terms-condition" element={<TermsAndConditions />} />
+        <Route path="/terms-condition" element={<TermsAndConditionsPage />} />
       </RouterRoutes>
     </div>
   );
