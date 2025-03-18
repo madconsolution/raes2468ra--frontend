@@ -4,13 +4,6 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const navItems = [
     { id: "home", path: "/", icon: <FiHome size={24} />, label: "Home" },
-
-    // {
-    //   id: "saved",
-    //   path: "/saved",
-    //   icon: <FiSave size={24} />,
-    //   label: "Saved",
-    // },
     {
       id: "chat",
       path: "/chat",
@@ -18,10 +11,10 @@ const Navbar = () => {
       label: "Chat",
     },
     {
-      id: "order",
-      path: "/detail",
+      id: "workers",
+      path: "/workers-search",
       icon: <FiUser size={24} />,
-      label: "Order",
+      label: "Workers",
     },
     {
       id: "setting",
@@ -32,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed bottom-[1%] left-1/2  lg:left-[65%]  bg-[#FFFFFF] -translate-x-1/2 w-[100%] md:w-[40%] lg:w-[30%]  rounded-2xl p-3 flex justify-around items-center">
+    <div className="fixed bottom-[1%] left-1/2 lg:left-[65%] bg-[#FFFFFF] -translate-x-1/2 w-[100%] md:w-[40%] lg:w-[30%] rounded-2xl p-3 flex justify-around items-center">
       {navItems.map((item) => (
         <NavLink
           key={item.id}

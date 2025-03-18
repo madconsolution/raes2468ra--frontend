@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 
-import WorkersSearchPage from "@/pages/search/WorkersSearchPage";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import Sidebar from "./Sidebar";
 
 const MainLayout = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -13,7 +13,7 @@ const MainLayout = () => {
     <>
       <>
         {/* Sidebar */}
-        {/* <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} /> */}
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </>
 
       {/* Main Content */}
@@ -28,12 +28,6 @@ const MainLayout = () => {
             <Menu className="w-23 h-16" />
           </Button>
         </div>
-
-        {/* Page Content */}
-        {/* <InfoPage></InfoPage> */}
-        {/* <Profile4/> */}
-        <WorkersSearchPage />
-        <div className="p-6">{/* <HomePage /> */}</div>
       </div>
     </>
   );

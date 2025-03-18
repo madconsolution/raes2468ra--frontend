@@ -1,6 +1,7 @@
 import DetailPage from "@/pages/details/DetailPage";
 import HomePage from "@/pages/home/HomePage";
 import InfoPage from "@/pages/info/InfoPage";
+import WorkersSearchPage from "@/pages/search/WorkersSearchPage";
 
 import { Route, Routes as RouterRoutes } from "react-router-dom";
 
@@ -9,12 +10,8 @@ const Routes = () => {
     <RouterRoutes>
       <Route path="/" element={<InfoPage />} />
       <Route path="/home" element={<HomePage />} />
-      <Route path="/detail" element={<DetailPage />} />
-
-      {/* <Route path="/saved" element={<SavedPage />} />
-      <Route path="/chat" element={<ChatPage />} />
-      <Route path="/order" element={<OrderPage />} />
-      <Route path="/setting" element={<SettingPage />} /> */}
+      <Route path="/details" element={<DetailPage />} />
+      <Route path="/workers-search" element={<WorkersSearchPage />} />
     </RouterRoutes>
   );
 };

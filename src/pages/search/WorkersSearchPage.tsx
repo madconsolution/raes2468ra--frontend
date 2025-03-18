@@ -1,5 +1,6 @@
 import CategoryCard from "@/components/reuseable/card/categories/CategoryCard";
 import ContractorsWorkersCard from "@/components/reuseable/card/categories/ContractorsWorkersCard";
+import WorkersSearch from "@/components/search/WorkersSearch";
 import TagsSections from "@/components/sections/TagsSections";
 
 const WorkersSearchPage = () => {
@@ -17,9 +18,12 @@ const WorkersSearchPage = () => {
             View Workers with their promo Pricing
           </h3>
           {/* Search Section */}
+          <WorkersSearch />
+          {/* Category Card */}
           <CategoryCard />
-
+          {/* Tags Sections */}
           <TagsSections />
+          {/* Contractors Workers Card */}
           <ContractorsWorkersCard />
         </div>
       </div>
