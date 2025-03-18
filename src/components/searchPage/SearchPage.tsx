@@ -1,12 +1,8 @@
-import React from "react";
-import { FiSearch } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
-import { IoIosPerson } from "react-icons/io";
-import icon from "@/assets/icons/Icon.svg";
-import icon1 from "@/assets/icons/Icon1.svg";
-import icon2 from "@/assets/icons/Icon2.svg";
-import { Button } from "../ui/button";
+import { FiSearch } from "react-icons/fi";
+
 import { IoMdTime } from "react-icons/io";
+import { Button } from "../ui/button";
 
 const SearchPage = () => {
   return (
@@ -15,7 +11,6 @@ const SearchPage = () => {
         <div className="flex justify-end items-center">
           <h2 className="text-xl font-bold mx-auto">Search all workers</h2>
           <div>
-            
             <div className="w-12 h-12 rounded-full bg-gray-300"></div>
           </div>
         </div>
@@ -30,40 +25,6 @@ const SearchPage = () => {
             placeholder="Search"
             className="w-full outline-none bg-transparent"
           />
-        </div>
-
-        {/* Categories Section */}
-        <div className="mt-6">
-          <div className="flex justify-between items-center">
-            <h2>Categories</h2>
-            <p className="text-base text-blue-500 cursor-pointer">See All</p>
-          </div>
-          <div className="grid grid-cols-3 gap-4 mt-3">
-            <div className="bg-[#8677EE] p-4 rounded-lg text-center">
-              <img
-                src={icon1}
-                alt="Promo Icon"
-                className="w-10 h-10 mb-2 mx-auto"
-              />
-              <h3 className="text-white">PROMOS</h3>
-            </div>
-            <div className="bg-white p-4 rounded-lg text-center">
-              <img
-                src={icon}
-                alt="Promo Icon"
-                className="w-10 h-10 mb-2 mx-auto"
-              />
-              <p className="text-base font-semibold">Icon Design</p>
-            </div>
-            <div className="bg-white p-4 rounded-lg text-center">
-              <img
-                src={icon2}
-                alt="Promo Icon"
-                className="w-10 h-10 mb-2 mx-auto"
-              />
-              <p className="text-base font-semibold">App Design</p>
-            </div>
-          </div>
         </div>
 
         {/* Tags Section */}
@@ -101,12 +62,10 @@ const SearchPage = () => {
                   </div>{" "}
                   <h6 className="text-[12px]">5.0 (21 Reviews)</h6>
                 </div>
-               <div className="flex items-center gap-1">
-                  <IoMdTime className="text-[#8677ee]"/>
-               <h6 className="text-[12px]">
-                  25 class
-                </h6>
-               </div>
+                <div className="flex items-center gap-1">
+                  <IoMdTime className="text-[#8677ee]" />
+                  <h6 className="text-[12px]">25 class</h6>
+                </div>
               </div>
             </div>
 
@@ -124,12 +83,10 @@ const SearchPage = () => {
                   </div>{" "}
                   <h6 className="text-[12px]">5.0 (12 Reviews)</h6>
                 </div>
-               <div className="flex items-center gap-1">
-                  <IoMdTime className="text-[#E3A835]"/>
-               <h6 className="text-[12px]">
-                  21 class
-                </h6>
-               </div>
+                <div className="flex items-center gap-1">
+                  <IoMdTime className="text-[#E3A835]" />
+                  <h6 className="text-[12px]">21 class</h6>
+                </div>
               </div>
             </div>
           </div>

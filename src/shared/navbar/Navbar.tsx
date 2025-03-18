@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const navItems = [
     { id: "home", path: "/", icon: <FiHome size={24} />, label: "Home" },
-    { id: "home", path: "/home", icon: <FiHome size={24} />, label: "Home" },
+
     // {
     //   id: "saved",
     //   path: "/saved",

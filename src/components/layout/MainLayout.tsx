@@ -1,13 +1,7 @@
 import { Button } from "@/components/ui/button";
 
-import Routes from "@/routes/Routes";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import Sidebar from "./Sidebar";
-import Profile1 from "@/pages/profile1/Profile1";
-import Profile2 from "@/pages/profile2/Profile2";
-import Profile3 from "@/pages/profile3/Profile3";
-import Profile4 from "@/pages/profile4/Profile4";
 import SearchPage from "../searchPage/SearchPage";
 
 const MainLayout = () => {
@@ -38,7 +32,7 @@ const MainLayout = () => {
         {/* Page Content */}
         {/* <InfoPage></InfoPage> */}
         {/* <Profile4/> */}
-        <SearchPage/>
+        <SearchPage />
         <div className="p-6">{/* <HomePage /> */}</div>
       </div>
     </>
