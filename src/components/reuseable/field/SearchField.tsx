@@ -9,15 +9,15 @@ const SearchField = () => {
   };
 
   return (
-    <div className="w-full max-w-lg mx-auto my-2">
+    <div className="w-[95%]  mx-auto my-2 rounded-md bg-[#B7B7B7] text-[#FFFFFF]">
       <div className="relative">
-        <MdSearch className="absolute text-[#FFFFFF] left-4 top-1/2 transform -translate-y-1/2 " />
+        <MdSearch className="absolute text-2xl text-[#FFFFFF] left-4 top-1/2 transform -translate-y-1/2 " />
         <input
           type="text"
           placeholder="Search..."
           value={searchTerm}
           onChange={handleInputChange}
-          className="w-full px-12 py-2 search_field text-[#FFFFFF]  rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
+          className="w-full px-12 py-2 search_field text-[#FFFFFF] rounded-md focus:outline-none focus:ring-2 "
         />
       </div>
     </div>

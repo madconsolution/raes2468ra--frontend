@@ -8,18 +8,16 @@ const WorkersSearch = () => {
 
   // Define available pages and their keywords
   const pages = [
-    { name: "details", path: "/details", keywords: ["details"] },
+    {
+      name: "details",
+      path: "/details",
+      keywords: ["details", "web development"],
+    },
     {
       name: "course details",
       path: "/course-details",
       keywords: ["course", "course details", "web development"],
     },
-    {
-      name: "web development",
-      path: "/web-development",
-      keywords: ["web development"],
-    },
-    // Add more pages as needed
   ];
 
   // Handle search submission
@@ -52,7 +50,7 @@ const WorkersSearch = () => {
       />
       <button
         onClick={handleSearch}
-        className="ml-2 px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition"
+        className="ml-2 px-4 py-2 bg-gray-300 text-gray-70 rounded-full hover:bg-gray-400 transition"
       >
         Search
       </button>

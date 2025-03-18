@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       {/* Wrap the entire app inside one Router */}
-      <div className="w-full  md:w-9/12 md:mx-auto">
+      <div className="w-full">
         <MainLayout />
         <Navbar />
         <Routes />

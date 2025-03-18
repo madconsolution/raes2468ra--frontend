@@ -1,26 +1,28 @@
-import { FiHome, FiMessageSquare, FiSettings, FiUser } from "react-icons/fi";
+import { BsFillTicketDetailedFill } from "react-icons/bs";
+import { FiHome, FiSearch } from "react-icons/fi";
+import { IoFilmOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navItems = [
     { id: "home", path: "/", icon: <FiHome size={24} />, label: "Home" },
     {
-      id: "chat",
-      path: "/chat",
-      icon: <FiMessageSquare size={24} />,
-      label: "Chat",
+      id: "details",
+      path: "/details",
+      icon: <BsFillTicketDetailedFill size={24} />,
+      label: "details",
     },
     {
       id: "workers",
       path: "/workers-search",
-      icon: <FiUser size={24} />,
+      icon: <FiSearch size={24} />,
       label: "Workers",
     },
     {
-      id: "setting",
-      path: "/setting",
-      icon: <FiSettings size={24} />,
-      label: "Setting",
+      id: "terms-condition",
+      path: "terms-condition",
+      icon: <IoFilmOutline size={24} />,
+      label: "terms-condition",
     },
   ];
 

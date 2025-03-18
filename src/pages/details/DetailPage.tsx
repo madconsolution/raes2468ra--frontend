@@ -6,6 +6,7 @@ import SliderCommon from "@/components/reuseable/slider/SliderCommon";
 const DetailPage = () => {
   return (
     <div className="py-5">
+      <h4 className=" text-center ">Details</h4>
       <SearchField></SearchField>
       <SkeletonComponent></SkeletonComponent>
       {/* Avatar with info */}

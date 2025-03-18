@@ -17,9 +17,9 @@ const MainLayout = () => {
       </>
 
       {/* Main Content */}
-      <div>
+      <>
         {/* Mobile Menu Button */}
-        <div className="md:hidden p-4  text-gray-700 flex items-center justify-between">
+        <div className="md:hidden   text-gray-700 flex items-center ">
           <Button
             variant="ghost"
             className="text-gray-700"
@@ -28,7 +28,7 @@ const MainLayout = () => {
             <Menu className="w-23 h-16" />
           </Button>
         </div>
-      </div>
+      </>
     </>
   );
 };
